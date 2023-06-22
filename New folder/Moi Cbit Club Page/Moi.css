@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.navbar-image {
+    width: 250px;
+    height: 60px;
+}
+
+.bg_nav {
+    background-color: #cbf6fd;
+}
+
+.nav-image {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.main-options {
+    font-weight: bold;
+    font-family: "Roboto";
+    color: black;
+    font-size: 25px;
+}
+
+#login_btn {
+    font-weight: bold;
+    font-family: "Roboto";
+    background-color: black;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.About_us_image {
+    height: 40vh;
+    width: 40vw;
+    border-radius: 40px;
+    margin: 20px;
+    background-color: antiquewhite;
+}
+
+.About_us_Heading {
+    font-weight: bold;
+    font-family: "Georgia";
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.About_us_para {
+    font-weight: 400;
+    font-family: "Times New Roman";
+    font-size: 30px;
+}
+*{
+    box-sizing:border-box;
+}
+.rows{
+    border:solid 1px;
+    height:40vh;
+    font-size:0;
+    border-width:0px;
+}
+.column{
+    border:solid 2px black;
+    display:inline-block;
+    border-width:0px;
+    height:100%;
+    width:33.3%;
+}
+.image{
+    height:300px;
+    width:400px;
+    margin-bottom: 10px;
+    
+}
+
+.project
+{ 
+    background-color:antiquewhite;
+    padding:20px;
+}
+.heading{
+    margin:0px;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.bg_team{
+    background-color: #cbf6fd;
+    padding: 20px;
+    height: 45vh;
+}
+.team_images{
+    width: 20vw;
+    margin: auto;
+    border-radius: 10px;
+}
+.bg_contactus{
+    background-color:antiquewhite;
+    padding:20px;
+    height: 40vh;
+}
+.contactus_images{
+    height: 80px;
+    background-color: black;
+    width: 80px;
+    margin: 10px;
+}

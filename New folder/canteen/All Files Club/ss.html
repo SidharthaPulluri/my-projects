@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ss.css" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 style="font-family: Algerian; font-size: 300%;">Menu</h1>
+        <div class="cart-box">
+            <div class="cart-icon">
+                <i class="fas fa-cart-arrow-down fa-2x"></i>
+            </div>
+            <div class="whole-cart-window hide">
+                <h2>Shopping Bag</h2>
+                <div class="cart-wrapper">
+                </div>
+                <div class="subtotal">Subtotal: ₹0.00</div>
+                <div class="checkout" onclick="generateTicketNumber()" >Checkout</div>
+            </div>
+        </div>
+    </header>
+    <section class="shop-section text-center" id="Breakfast">
+        <h class="heading">BREAKFAST</h>
+        <div class="card-wrapper">
+            <div data-id="1" class="card-item">
+                <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg" />
+                <div class="details">
+                    <h3> Masala-Dosa</h3>
+                    <p>
+                        <span> Quantity:1pcs<br/>Serves 1 person<br/></span>
+                        <span class="price">Price: ₹40</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="2" class="card-item">
+                <img src="https://b.zmtcdn.com/data/pictures/chains/3/19543883/87ea2e127a2e58e7c08e4a13d857879f.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" />
+                <div class="details">
+                    <h3>Idly</h3>
+                    <p>
+                        <span>
+                            Quantity:4pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹40</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="3" class="card-item">
+                <img src="https://foodiewish.com/wp-content/uploads/2020/05/Medu-Vada-Recipe-1.jpg" />
+                <div class="details">
+                    <h3>Vada</h3>
+                    <p>
+                        <span> Quantity:4pcs<br/>Serves 1-2 person<br/></span>
+
+                        <span class="price">Price: ₹40</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="4" class="card-item">
+                <img src="https://www.vahrehvah.com/indianfood_org/wp-content/uploads/2010/10/S4HDSXLWgu.jpg" />
+                <div class="details">
+                    <h3>Bonda</h3>
+                    <p>
+                        <span>
+                            Quantity:4pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹30</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <!-- product 5 -->
+            <div data-id="5" class="card-item">
+                <img src="https://www.flavouroffood.com/wp-content/uploads/2021/03/Instant-Rava-Uttapam-4.jpg" />
+                <div class="details">
+                    <h3>Uthappam</h3>
+                    <p>
+                        <span>Quantity:1pcs<br/>Serves 1 person<br/></span>
+                        <span class="price">Price: ₹30</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- product 6 -->
+            <div data-id="6" class="card-item">
+                <img src="https://desertfoodfeed.com/wp-content/uploads/2020/12/rava-poori-puri-recipe.jpg" />
+                <div class="details">
+                    <h3>Poori</h3>
+                    <p>
+                        <span>
+                            Quantity:2pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹30 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="7" class="card-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPY3oixFUMtFfljpet_ukGV26Xv3XKy7e3qg&usqp=CAU" />
+                <div class="details">
+                    <h3>Onion-Dosa</h3>
+                    <p>
+                        <span>
+                            Quantity:1pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹25 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="8" class="card-item">
+                <img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2020/Vegetable_Rava_Upma_Sooji_Upma_Recipe_Video_6_1600.jpg" />
+                <div class="details">
+                    <h3>Upma</h3>
+                    <p>
+                        <span>
+                            Quantity:1 plate<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹30 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop-section" id="lunch">
+        <h class="heading">LUNCH</h>
+        <div class="card-wrapper">
+            <div data-id="9" class="card-item">
+                <img src="https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/2017/08/31082832/HotelMaris-Anandam1.jpg" />
+                <div class="details">
+                    <h3>Full meals</h3>
+                    <p>
+                        <span> Quantity:Rice+curry<br/>papad+curd<br/>sambar<br/>Serves 1 person<br/></span>
+                        <span class="price">Price: ₹70</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="10" class="card-item">
+                <img src="https://holycowvegan.net/wp-content/uploads/2020/03/veg-manchurian-7.jpg" />
+                <div class="details">
+                    <h3>manchuria</h3>
+                    <p>
+                        <span>
+                            Quantity:10-12pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price:₹50</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="11" class="card-item">
+                <img src="https://www.allrecipes.com/thmb/WAaJX7ghFAiGjU3WGRmRC424exA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6751001-egg-fried-rice-Mariya-Tkachenko-4x3-1-0a5504e18cea49c2bf4419799bd50ad9.jpg" />
+                <div class="details">
+                    <h3>Egg Fried Rice</h3>
+                    <p>
+                        <span> Quantity:~200grms<br/>Serves 1-2 person<br/></span>
+
+                        <span class="price">Price: ₹60</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="12" class="card-item">
+                <img src="https://i.ytimg.com/vi/HS-gI6SEKTc/maxresdefault.jpg" />
+                <div class="details">
+                    <h3>Cholepuri</h3>
+                    <p>
+                        <span>
+                            Quantity:2pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹50</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <!-- product 5 -->
+            <div data-id="13" class="card-item">
+                <img src="https://static.toiimg.com/thumb/resizemode-4,width-1200,height-900,msid-76344801/76344801.jpg" />
+                <div class="details">
+                    <h3>parota</h3>
+                    <p>
+                        <span>Quantity:2pcs<br/>Serves 1 person<br/></span>
+                        <span class="price">Price: ₹40</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- product 6 -->
+            <div data-id="14" class="card-item">
+                <img src="https://shravskitchen.com//wp-content/uploads/2016/03/Vegetable-kurma-2-982x655." />
+                <div class="details">
+                    <h3>chapathi</h3>
+                    <p>
+                        <span>
+                            Quantity:3pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹40 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="15" class="card-item">
+                <img src="https://i.ytimg.com/vi/lZOccMAbS2s/maxresdefault.jpg" />
+                <div class="details">
+                    <h3>Bhagara Rice</h3>
+                    <p>
+                        <span>
+                            Quantity:~200 grams<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹60 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="16" class="card-item">
+                <img src="https://recipesofhome.com/wp-content/uploads/2020/06/chicken-biryani-recipe.jpg" />
+                <div class="details">
+                    <h3>Chicken Biryani</h3>
+                    <p>
+                        <span>
+                            Quantity:~200 grams<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹80 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="17" class="card-item">
+                <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/04/veg-biryani-recipe.jpg" />
+                <div class="details">
+                    <h3>Veg Biryani</h3>
+                    <p>
+                        <span>
+                            Quantity:~200 grams<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹70 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="18" class="card-item">
+                <img src="https://tastypics.s3.us-west-1.amazonaws.com/a30f207304f8461eb193319491847e7e.jpg" />
+                <div class="details">
+                    <h3>Chicken manchuria</h3>
+                    <p>
+                        <span>
+                            Quantity:10-12 pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹70 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="19" class="card-item">
+                <img src="https://recipesofhome.com/wp-content/uploads/2020/06/veg-fried-rice-recipe.jpg" />
+                <div class="details">
+                    <h3>Veg Fried Rice</h3>
+                    <p>
+                        <span>
+                            Quantity:~200 grams<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹60 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="20" class="card-item">
+                <img src="https://www.indianrecipeinfo.com/wp-content/uploads/2020/11/Chicken-Fried-Rice-Recipe-Restaurant-Style.jpg" />
+                <div class="details">
+                    <h3>Chicken Fried Rice</h3>
+                    <p>
+                        <span>
+                            Quantity:~200 grams<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹100 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shop-section">
+        <h class="heading">SNACKS</h>
+        <div class="card-wrapper">
+            <div data-id="21" class="card-item">
+                <img src="https://static.toiimg.com/thumb/61050397.cms?imgsize=246859&width=800&height=800 "/>
+                <div class="details">
+                    <h3>SAMOSA</h3>
+                    <p>
+                        <span> Quantity:1pcs<br/>Serves 1 person<br/></span>
+                        <span class="price">Price: ₹40</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="22" class="card-item">
+                <img src="https://i.ytimg.com/vi/nUARCgSyW8o/maxresdefault.jpg">
+                <div class="details">
+                    <h3>MIRCHI BAJJI</h3>
+                    <p>
+                        <span>
+                            Quantity:4pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹40</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="23" class="card-item">
+                <img src="https://thecozycook.com/wp-content/uploads/2020/02/Copycat-McDonalds-French-Fries-.jpg"/>
+                <div class="details">
+                    <h3>FRENCH FRIES</h3>
+                    <p>
+                        <span> Quantity:limited<br/>Serves 1-2 person<br/></span>
+
+                        <span class="price">Price: ₹40</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="24" class="card-item">
+                <img src="https://thumbs.dreamstime.com/b/pizza-rustic-italian-mozzarella-cheese-basil-leaves-35669930.jpg" />
+                <div class="details">
+                    <h3>PIZZA</h3>
+                    <p>
+                        <span>
+                            Quantity:4pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹30</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <!-- product 5 -->
+            <div data-id="25" class="card-item">
+                <img src="https://media.istockphoto.com/id/888366454/photo/chicken-wrap.jpg?s=612x612&w=0&k=20&c=smy2oTsWnDDDEaS_Rkn6Jj-7KXll4FlO_aYR9BoKcu0=" />
+                <div class="details">
+                    <h3>SHAWARMA</h3>
+                    <p>
+                        <span>Quantity:1pcs<br/>Serves 1 person<br/></span>
+                        <span class="price">Price: ₹80</span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- product 6 -->
+            <div data-id="26" class="card-item">
+                <img src="https://media.istockphoto.com/id/157431311/photo/turkey-sandwich.jpg?s=612x612&w=0&k=20&c=uB6byErFAnWxFkkAqMiGNRJGE8r3nqsSDdqrfBE8HOA=" />
+                <div class="details">
+                    <h3>SANDWICH</h3>
+                    <p>
+                        <span>
+                            Quantity:1pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹30 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="27" class="card-item">
+                <img src="https://cdn.tarladalal.com/members/9306/procstepimgs/paneer-schezwan-frankie-25-10-189261.jpg" />
+                <div class="details">
+                    <h3>PANEER FRANKIE</h3>
+                    <p>
+                        <span>
+                            Quantity:1pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹55 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+            <div data-id="28" class="card-item">
+                <img src="https://allchickenrecipe.com/wp-content/uploads/2020/05/Chicken-Frankie-Roll-1.jpg" />
+                <div class="details">
+                    <h3>CHICKEN-FRANKIE</h3>
+                    <p>
+                        <span>
+                            Quantity:1pcs<br/>Serves 1 person<br/>
+                        </span>
+
+                        <span class="price">Price: ₹70 </span>
+                        <span class="add-to-cart-btn">Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="ss .js"></script>
+</body>
+
+</html>
